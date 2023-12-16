@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <div>
+    <ul id="image">
+        <l1><img width="200px" id="cat"  src="https://hips.hearstapps.com/hmg-prod/images/cute-baby-animals-kittens-1558534776.jpg?crop=0.444xw:1.00xh;0.262xw,0&resize=980:*" alt=""></l1>
+        <l1><img width="200px" id="dog"     src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/40/1443547813-gettyimages-169659935.jpg?crop=0.447xw:1.00xh;0.133xw,0&resize=980:*" alt=""></l1>
+        <l1><img width="200px"  id="goat"     src="https://hips.hearstapps.com/clv.h-cdn.co/assets/15/40/gettyimages-544673959.jpg?crop=1.0xw:1xh;center,top&resize=980:*" alt=""></l1>
+        <li><a style="color:aqua;" href="https://google.com"  id="google" >google</a></li>
+        <!-- <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li> -->
+    </ul>
+</div>
+</body>
+<script>
+    // here bye the using of false thenthe property will be mgrated and event is following buble phonemanon
+    /****document.getElementById('dog').addEventListener(('click'),(p)=>{
+        console.log("this is a dog");
+    },false)
+     
+
+    document.querySelector('ul').addEventListener(('click'),(p)=>{
+        console.log("this is a img");
+    },false)***/
+    // here we use true and then this is following the captured evnt 
+    // and for stopping this we use 
+    // document.querySelector('ul').addEventListener(('click'),(p)=>{
+    //     console.log("this is a ul");
+        
+    // },false)
+     
+
+    // document.getElementById('dog').addEventListener(('click'),(p)=>{
+    //     console.log("this is a dog");
+    //     // p.stopPropagation()
+    // },true)
+
+    document.getElementById('google').addEventListener( ('click'),(p)=>{
+        console.log("count clicked");
+        p.preventDefault();
+        p.stopPropagation();
+    },true)
+    document.querySelector('#image').addEventListener(
+        'click',(e)=>{
+           console.log(e.target.tagName);
+           console.log(e.target.id);
+           if(e.target.tagName === "IMG"){
+            let removeIt = e.target.parentNode
+            removeIt.remove();
+
+           }
+        },true
+    )
+</script>
+</html>
