@@ -1,0 +1,96 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>HTML Calculator</title> 
+</head> 
+<script>
+	
+	let display= (value)=>{
+		let dis =document.getElementById("show").value += value;
+		// return dis;
+	}
+	function clear(){
+		return document.getElementById("show").value= "";
+		
+    }
+
+    function cal(){
+		let result  = eval(document.getElementById("show").value)
+		document.getElementById("show").value = result;
+		return result
+    }
+</script>
+
+<body> 
+
+	<!-- Create table -->
+	<table id="calcu"> 
+		<tr> 
+			<td colspan="3"> 
+				<input type="text" id="show"> 
+			</td> 
+            <td><input type="button" value="c" onclick="clear()" id="clear" ></td> 
+		</tr> 
+        
+		<tr> 
+			<td><input type="button" value="1" onclick="display()" id="show" ></td> 
+			<td><input type="button" value="2"  onclick="display() " ></td> 
+			<td><input type="button" value="3"   onclick="display()" ></td> 
+			<td><input type="button" value="/" onclick="display()"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4"  onclick="display()"></td> 
+			<td><input type="button" value="5"  onclick="display()"></td> 
+			<td><input type="button" value="6"  onclick="display()"></td> 
+			<td><input type="button" value="*" onclick="display()"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7"  onclick="display()"></td> 
+			<td><input type="button" value="8" onclick="display()"></td> 
+			<td><input type="button" value="9" onclick="display()"></td> 
+			<td><input type="button" value="-" onclick="display()"></td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="0" onclick="display()"></td> 
+			<td><input type="button" value="." onclick="display()" ></td> 
+			<td><input type="button" value="=" onclick="cal()"></td> 
+			<td><input type="button" value="+" onclick="display()"></td> 
+		</tr> 
+	</table> 
+
+   
+
+
+
+</body> 
+
+</html> 
+	<!-- For styling -->
+	<style> 
+		table { 
+			border: 1px solid black; 
+			margin-left: auto; 
+			margin-right: auto; 
+		} 
+		
+		input[type="button"] { 
+			width: 100%; 
+			padding: 20px 40px; 
+			background-color: rgb(14, 15, 14); 
+			color: white; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 25px; 
+		} 
+		
+		input[type="text"] { 
+			padding: 20px 30px; 
+			font-size: 24px; 
+			font-weight: bold; 
+			border: none; 
+			border-radius: 5px; 
+			border: 2px solid black; 
+		} 
+	</style> 

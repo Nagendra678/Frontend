@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form >
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" Name="fname" ><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" Name="lname" ><br><br>
+    <input type="submit" value="Submit" onclick="validation()">
+  </form>
+  <script>
+    const validation = ()=>{
+      const First_name  = document.getElementsByName("fname").values;
+      const Last_name = document.getElementsByName("lname").values;
+      let Number = "1,2,3,4,5,6,7,8,9,0";
+    console.log(First_name);
+    if(First_name = Number){
+      alert("Number is not valid")
+    }
+    else if(!First_name){
+      alert("not empty")
+    }
+    else if(Last_name =  NUmber){
+      alert("kya kr rha hai bhai")
+    }
+    else{
+      alert("Done")
+    }
+    }
+  </script>
+
+</body>
+
+</html>

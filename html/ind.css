@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-size: contain; */
+    
+}
+/* body{
+    background-color: brown;
+    background-size: contain;
+    width: ;
+} */
+nav{
+    /* background: #0082e63d; */
+    background-image:url("https://wp-mktg.prod.getty1.net/istockcontentredesign/wp-content/uploads/sites/5/2020/06/2021_whatarevectorgraphics_hero.jpg");
+    
+    /* background-repeat:no-repeat; */
+    height: 80%; 
+    width: 100%; 
+    /* line-height: 80px; */
+    
+}
+ul{
+    /* color: white; */
+    
+    font-family: futura;
+    background-image: url("https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=");
+    
+    /* display: inline-block;
+    line-height: 80px;
+    margin: 0 5px; */
+    margin-top: 0.7%;
+    padding: 0.5vh;
+    float: right;
+    margin-right: 50px;
+    border-radius: 10px;
+    /* display: inline-block; */
+}
+
+ul li  {
+    /* color: white; */
+    display: inline-block;
+    transition: margin-right 20s;
+    line-height: 50px;
+    margin: 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    /* text-decoration:none; */
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    /* letter-spacing: 5px; */
+}
+.hype{
+    text-transform: uppercase;color: aliceblue;
+    background-color: black;
+    border-radius: 10px;
+
+    background-image: url("https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    font-family:futura;
+    /* height: 80%;
+    width: 100%; */
+    margin-top: 5%;
+    margin-left: 2%;
+    
+
+    
+    padding: 2vh;
+    line-height: 80px;
+    letter-spacing: 5px;
+}
+label.hype:hover{
+    background-color: black;
+    padding: 25px;
+    transition: 0.5s;
+}
+    
+*::selection{
+    color: greenyellow;
+    background-color: white;
+}
+a:hover{
+    /* background-color: rgb(216, 199, 7); */
+    transition: 0.5s;
+    border-radius: 10px;
+    padding: 3vh;
+}
+a:hover.y{
+    background-color: rgb(89, 4, 169);
+}
+a:hover.u{
+    background-color:rgb(140, 35, 238)
+}
+a:hover.i{
+    background-color: rgb(182, 7, 173);
+}
+a:hover.o{
+    background-color: rgb(222, 52, 205);
+}
+a:hover.p{
+    background-color: rgb(226, 104, 43);
+}
+#page1{
+    background-color: chocolate;
+    position: absolute;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: space-evenly;
+    margin: 1vh;
+    border-radius: 25px;
+ 
+}
+.one{
+    justify-content: space-between;
+    /* background-color: aqua; */
+    border-radius: 25px;
+    display: flex;
+    margin-bottom: 335px;
+    position:fixed;
+}
+
+.elem{ 
+
+    height:20vh;
+    width: 20vh;
+     margin: 2px;
+    /* margin-left:7vh; */
+    background-color: aqua;
+    border-radius: 75px;
+
+} 
+
+
+#elem3{
+
+    height: 20vh;
+    width: 8vh;
+    margin-top: 30px ;
+    background-color: aqua;
+    border-radius: 22px;}
+
+    #elem3:hover{
+        transition: 0.5s;
+        padding: 1vh;
+        background-color: red;
+    }
+
+#page1 :hover.elem{
+    background-color: black;
+ 
+    /* margin-bottom: 2vh; */
+
+    transition: 0.5s;
+    padding: 5px;
+    border-radius: 25px;
+}
+#page2{
+    background-color: rgb(6, 136, 249);
+    /* margin-top: 5px; */
+    height: 70vh;
+    /* width: 50vh; */
+    margin-left: 23%;
+    transition: 0.5s;
+    border-radius:25px ;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#page2.viral:hover{
+    background-image: url("https://media.istockphoto.com/id/1248542684/vector/abstract-blurred-colorful-background.jpg?s=612x612&w=0&k=20&c=6aJX8oyUBsSBZFQUCJDP7KZ1y4vrf-wEH_SJsuq7B5I=");
+    /* object-fit: cover; */
+    padding: 100px;
+    border-radius: 25px;
+    margin-right: 2vh;
+    margin-left: 20%;
+    /* transition: margin-right 20s; */
+    /* font-family: futura; */
+    /* text-transform: uppercase; */
+    /* margin-top: 40px; */
+}
+ pre{
+    font-family: futura;
+width: auto;
+height: 10vh;
+width: 43%;
+/* position: absolute; */
+    /* text-align: center; */
+    margin-left:28%;
+    /* margin-bottom: ; */
+    /* margin-right: 28%; */
+    color: white;
+    background-color: black;
+    /* width: fit-content; */
+    border-radius: 50px;
+    transition: 0.5s;
+    padding-top: 2.8vh;
+    padding-bottom: 0;
+} 
+pre h1:hover.pop{
+    padding: 1vh;
+    margin-right: 50%; 
+    
+        /* margin-top: 3vh; */
+    
+
+}
+/* pre h1{ */
+    /* margin-top: 3vh; */
+/* } */

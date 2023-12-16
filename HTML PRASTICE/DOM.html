@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Document</title>
+</head>
+<body>
+  <h1 class="one" id="hii">hii guys <span class="sb" id ="sbi"> bind</span></h1>
+  <ul>
+  <li>hii</li>
+  <li>heloo</li>
+  <li>three</li>
+  </ul>
+</body>
+</html>
+<script>
+   document.getElementById('hii').setAttribute('class','pop')
+   mypop = document.getElementsByClassName('pop')
+   myhii = document.getElementById('hii')
+myhii.style.color="green"
+myhii.style.backgroundColor = "pink"
+myhii.style.borderRadius ="25px";
+myhii.style.fontFamily ="futura"
+myhii.style.textTransform ="uppercase"
+myhii.style.display="flex"
+
+// myhii.innerText="follow me guys"
+// myhii.innerHTml="<span>billo</span>"
+nrsbi= document.getElementById('sbi')
+nrsbi.innerText="bino"
+// iinnerhtml mai jo html hai vo change ki jati hai iner text mai only text change kiye jate hai
+myul=document.querySelector('ul')
+myli=myul.querySelectorAll('li')
+myarrlist=Array.from(myli)
+myarrlist.map((l)=>{
+  l.style.color="purple"
+  l.style.fontFamily="futura"
+  l.style.textTransform="uppercase"
+  l.style.padding="2px"
+  l.style.backgroundColor="PINK"
+  l.style.borderRadius="5px"
+  l.style.marginRight="50vh"
+})
+
+// myli.style.backgroundColor="purple"
+// myli.style.padding="30px"
+// myli.style.borderRadius="5px"
+
+// myul.style.backgroundColor="yellow"
+</script>

@@ -1,0 +1,27 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+*::selection{
+    color: #fff;
+    background-color: #f80808;
+}
+.name{
+
+    font-size: large;
+    color: black;
+
+}
+form{
+    column-fill: balance;
+    background-image: url("https://media.istockphoto.com/id/1340597152/photo/male-profile-silhouette-sad-or-loneliness-young-man-on-black-background-unrecognizable-person.webp?b=1&s=170667a&w=0&k=20&c=3-cGxAwO2NVqg84E631Odx9FsGh8ck5X5TSbasXxYBQ=");
+    margin: 1VW 1.5VW;
+    border-radius: 100%;
+    padding: 3VW 0.3VW;
+    width: 18%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;    
+}
